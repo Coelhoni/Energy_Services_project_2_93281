@@ -572,5 +572,5 @@ def update_difference_graph(selected_models, start_date, end_date):
     return fig  
  
 if __name__ == '__main__':
-    webbrowser.open('http://127.0.0.1:8050/') #uncomment this line in the first time running the code, then it can be commented again
+    #webbrowser.open('http://127.0.0.1:8050/') #uncomment this line in the first time running the code, then it can be commented again
     app.run_server()
