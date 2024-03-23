@@ -147,7 +147,7 @@ fig_results = px.line(df_results, x=df_results.index, y=df_results.columns[0:6])
 
 ### Dashboard ###
 
-#" Create Dash app ##
+## Create Dash app ##
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 white_text_style = {'color': 'white'}
 
@@ -251,6 +251,7 @@ def generate_stats_table(dataframe):
 ## App layout ##
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server=app.server
 
 app.layout = html.Div(style={'backgroundColor': 'white'},children = [
     html.H1(html.B('IST Civil Pavilion Energy Analysis')),
